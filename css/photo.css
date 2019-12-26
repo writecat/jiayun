@@ -1,0 +1,40 @@
+ *{margin:0;padding:0;}
+        body{
+            overflow: hidden;
+            background-color: #000;
+        }
+        ul{list-style-type: none;}
+        .wrap{            
+            /* perspective: 800px; */  /* ----- 按钮位置 ---- */
+          /*   width: 1120px;
+            height: 630px; */
+            margin:0;
+        }
+        .con{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        .con > li{
+            transform-style: preserve-3d;
+        }
+        .wrap > button{
+            position: absolute;
+            z-index:1;
+            width: 30px;
+            height: 50px;
+            top:50%;
+            background-color: rgba(250,250,250,0);
+            border:none;
+            font-size: 25px;
+            color:#000;
+            cursor: pointer;
+            transform: translateY(-50%);
+            outline:none;
+        }
+        .left{
+            left:0;
+        }
+        .right{
+            right:0;
+        }
